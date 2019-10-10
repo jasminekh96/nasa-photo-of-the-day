@@ -10,12 +10,12 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-html {
+/* html {
 	width: 880px;
 	margin: 0 auto;
-	background-color: black;
-}
-p {
+	/* background-color: #2f4f4f; */
+
+/* p {
 	color: white;
 	margin-left: 40px;
 }
@@ -24,4 +24,4 @@ h2 {
 }
 img {
 	margin-right: 460px;
-}
+}  */

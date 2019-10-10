@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import NasaCard from './NasaCard';
+import styled from 'styled-components';
 
 export default function NasaList() {
+	const Container = styled.div`
+		width: 800px;
+		margin: 0 auto;
+		background: #2f4f4f;
+		color: white;
+		padding: 20px;
+		border-radius: 80px;
+	`;
+
 	const [ nasa, setNasa ] = useState({
 		date        : '',
 		explanation : '',
@@ -23,7 +33,7 @@ export default function NasaList() {
 			});
 	}, []);
 	return (
-		<div className='NASA'>
+		<Container>
 			<NasaCard
 				key={nasa.id}
 				date={nasa.date}
@@ -31,6 +41,6 @@ export default function NasaList() {
 				title={nasa.title}
 				media_type={nasa.url}
 			/>
-		</div>
+		</Container>
 	);
 }
